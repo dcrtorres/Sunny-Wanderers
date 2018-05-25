@@ -1,0 +1,117 @@
+/* Ion.RangeSlider, Simple Skin
+// css version 2.0.3
+// © Denis Ineshin, 2014    https://github.com/IonDen
+// © guybowden, 2014        https://github.com/guybowden
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+.irs {
+    height: 10px;
+	margin-left: 5%;
+}
+.irs-with-grid {
+    height: 75px;
+	width: 80%;
+
+}
+.irs-line {
+    height: 5px; top: 33px;
+    background: #EEE;
+    width: 100%;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+	margin-left: -2%;
+}
+    .irs-line-left {
+        height: 8px;
+    }
+    .irs-line-mid {
+        height: 8px;
+    }
+    .irs-line-right {
+        height: 8px;
+    }
+
+.irs-bar {
+    height: 5px; 
+	top: 33px;
+    background: #C1272D;
+
+}
+    .irs-bar-edge {
+        height: 10px; 
+		top: 33px;
+        width: 14px;
+        border: 1px solid #428bca;
+        border-right: 0;
+        background: #cccccc;
+
+        border-radius: 16px 0 0 16px;
+        -moz-border-radius: 16px 0 0 16px;
+    }
+
+.irs-shadow {
+    height: 2px; top: 38px;
+    background: #000;
+    opacity: 0.3;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+
+.irs-slider {
+    top: 30px;
+    width: 12px; height: 12px;
+    background: #C1272D;
+    border-radius: 18px;
+    -moz-border-radius: 18px;
+    cursor: pointer;
+}
+
+
+
+.irs-min, .irs-max {
+    display: none;
+	color: #333;
+    font-size: 12px; line-height: 1.333;
+    text-shadow: none;
+    top: 0;
+    padding: 1px 5px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+
+
+.irs-from, .irs-to, .irs-single {
+    color: #fff;
+    font-size: 14px; line-height: 1.333;
+    text-shadow: none;
+    padding: 1px 5px;
+    background: #C1272D;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+
+.irs-grid {
+    height: 27px;
+}
+.irs-grid-pol {
+    opacity: 0.5;
+    background: #C1272D;
+}
+.irs-grid-pol.small {
+    background: #999;
+}
+
+.irs-grid-text {
+    bottom: 5px;
+    color: #99a4ac;
+}
+
+.irs-disabled {
+}

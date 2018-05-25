@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<head>
+     <title> Visualization </title>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+	 <link rel="stylesheet" type="text/css" href="./css/visualstyle.css">
+     <link rel="stylesheet" type="text/css" href="./css/barreset.css" />
+     <link rel="stylesheet" type="text/css" href="./css/sidebar-menu-sideslide.css" />
+     <link rel="stylesheet" type="text/css" href="./css/barstyle.css">
+	 <link rel="stylesheet" type="text/css" href="./css/ion.rangeSlider.css">
+	 <link rel="stylesheet" type="text/css" href="./css/ion.rangeSlider.skinHTML5.css">
+    <style>
+	#min_value, #min_year, #max_year, #max_value { display: none;}
+	</style>
+	
+</head>
+<body>
+
+<div id='wrapper'>
+     <div id='map-canvas'></div>
+
+    <div class="legend-title">
+    <img  id="legend-title"  src="./img/legendtitle.svg" 
+	onmouseover="this.src='./img/legend-light.svg'";
+	onmouseout="this.src='./img/legendtitle.svg';">
+	</img>
+	</div>
+	<div class="legend">
+	<img  id="legend"  src="./img/legend-0.svg"/>
+	</div>
+</div>
+
+
+
+
+
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js?ver=1.10.2'></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=visualization&key=AIzaSyBELQDtjZRAoXjNXh64CqwZJ-Xp3u975yM"></script>
+
+<script type='text/javascript' src='./js/school_javascript.js'></script>
+<script type='text/javascript' src='./js/house_javascript.js'></script>
+<!--<script type='text/javascript' src='./js/shp.js'></script>----->
+<script type='text/javascript' src='./js/redStyle.js'></script>
+
+
+<script>
+  $('#legend-title').click(function() {
+    $('#legend').toggle();
+});
+</script>
+
+
+<!--hidden sidebar-->
+
+<div class="menu-wrap">
+
+<div class="icon-list">
+<!--dropdown selection-->
+<div class="mapping-title">
+  <a>BEIJING SCHOOL <br>DISTRICT HOUSING MAP </a>
+  </div>
+     <br>
+    <div class="container">
+
+	<div class="accordion">
+		<dl>
+			<dt>
+				<a href="#accordion1" aria-expanded="false" aria-controls="accordion1" class="accordion-title accordionTitle js-accordionTrigger">
+			&nbsp;&nbsp;SCHOOL SELECTION</a>
+			</dt>
+
+			<dd class="accordion-content accordionItem is-collapsed" id="accordion1" aria-hidden="true">
+                <div class="accordion-content-text">
+
+		        		     &nbsp;District:
+
+							 <div class="sidebar-hidden-content">
+							 &nbsp;<label class="containercheck">
+							 Haidian<input name="checkbox-d" type="checkbox" value="Haidian"  />
+							    <span class="checkmark"></span></label>
+							 &nbsp;<label class="containercheck">
+							  Chaoyang<input name="checkbox-d" type="checkbox" value="Chaoyang" / >
+							  <span class="checkmark"></span></label>
+							 <br>
+			        	     &nbsp;<label class="containercheck">
+							 Xicheng<input name="checkbox-d" type="checkbox" value="Xicheng"  />
+			        	      <span class="checkmark"></span></label>
+
+							 &nbsp;<label class="containercheck">
+							 Dongcheng<input name="checkbox-d" type="checkbox" value="Dongcheng"  />
+							  <span class="checkmark"></span></label>
+							 </div>
+
+
+							 &nbsp;School Category:
+
+							 <div class="sidebar-hidden-content">
+			        	     &nbsp;<label class="containercheck">
+							 Primary School
+							 <input name="checkbox-sc" type="checkbox" value="Primary"  />
+							  <span class="checkmark"></span></label>
+		        		     <br>
+							 &nbsp;<label class="containercheck">
+							 Middle School
+							 <input name="checkbox-sc" type="checkbox" value="Middle"  />
+							  <span class="checkmark"></span></label>
+
+							 </div>
+
+
+							  &nbsp;School Quality:
+
+							 <div class="sidebar-hidden-content">
+							 &nbsp;<label class="containercheck">
+			        	     Class 1 Division 1
+							 <input name="checkbox-sq" type="checkbox" value="1"  />
+							 <span class="checkmark"></span></label>
+			        	     <br>
+							 &nbsp;<label class="containercheck">
+			        	      Class 1 Division 2
+							  <input name="checkbox-sq" type="checkbox" value="2"  />
+							  <span class="checkmark"></span></label>
+			        	     <br>
+							 &nbsp;<label class="containercheck">
+			        	     Class 2 Division 1
+ 							  <input name="checkbox-sq" type="checkbox" value="3" />
+							  <span class="checkmark"></span></label>
+			        	     <br>
+							 &nbsp;<label class="containercheck">
+			        		 Class 2 Division 2
+							 <input name="checkbox-sq" type="checkbox" value="4" />
+							 <span class="checkmark"></span></label>
+							 <br>
+							 &nbsp;<label class="containercheck">
+							  General
+			        	     <input name="checkbox-sq" type="checkbox" value="5"  />
+							 <span class="checkmark"></span></label>
+							 <br>
+							 </div>
+
+
+							 <div class="sidebar-hidden-content">
+							 <br>
+		        		     &nbsp;<label class="containercheck">
+							 Show School-District
+							 <input name="checkbox-ssd" type="checkbox" value="y"  />
+							 <span class="checkmark"></span></label>
+                             </div>
+
+							 <input type="button" id="schoolapply" class="submit" value="Submit" />
+
+                            <script type='text/javascript'src='./js/schoolselection.js'></script>
+                </div>
+			</dd>
+
+
+			<br>
+			<dt>
+				<a href="#accordion2" aria-expanded="false" aria-controls="accordion2" class="accordion-title accordionTitle js-accordionTrigger">
+			&nbsp;&nbsp;HOUSING SELECTION</a>
+			</dt>
+
+			<dd class="accordion-content accordionItem is-collapsed" id="accordion2" aria-hidden="true">
+			    <div class="accordion-content-text">
+
+		        		     &nbsp;District:
+
+							 <div class="sidebar-hidden-content">
+							 &nbsp;<label class="containercheck">
+							  Haidian
+							  <input name="checkbox-hd" type="checkbox" value="Haidian"  />
+							  <span class="checkmark"></span></label>
+							  &nbsp;<label class="containercheck">
+							  Chaoyang
+							  <input name="checkbox-hd" type="checkbox" value="Chaoyang" / >
+							  <span class="checkmark"></span></label>
+							 <br>
+			        	     &nbsp;<label class="containercheck">
+			        	      Xicheng
+                              <input name="checkbox-hd" type="checkbox" value="Xicheng"  />
+							  <span class="checkmark"></span></label>
+							 &nbsp;<label class="containercheck">
+							  Dongcheng
+							  <input name="checkbox-hd" type="checkbox" value="Dongcheng"  />
+							  <span class="checkmark"></span></label>
+							 </div>
+
+
+							 &nbsp;Building Age:
+
+							 <input type="text" id="rangeslider-year" name="rangesliderbar-year" value="" />
+
+							 <div><span id="min_year"></span></div>
+							 <div><span id="max_year"></span></div>
+
+							 <script src="./js/ion.rangeSlider.js"></script>
+                             <script>
+
+                                $(function () {
+
+                                    $("#rangeslider-year").ionRangeSlider({
+                                      type: "double",
+                                      grid: true,
+                                      min: 1950,
+                                      max: 2015,
+                                      from: 1990,
+                                      to: 2000,
+
+                                    });
+
+									$("#rangeslider-year").on("change",function(){
+									  var $this=$(this),
+									     min_year=$this.data("from");
+										 max_year=$this.data("to");
+
+									  $("#min_year").html(min_year);
+									  $("#max_year").html(max_year);
+									});
+
+                                });
+                            </script>
+
+
+							&nbsp;Housing Price Range (/m²):
+							 <br>
+
+
+							 <input type="text" id="rangeslider" name="rangesliderbar" value="" />
+
+							 <div><span id="min_value"></span></div>
+							 <div><span id="max_value"></span></div>
+
+							 <script src="./js/ion.rangeSlider.js"></script>
+                             <script>
+
+                                $(function () {
+
+                                    $("#rangeslider").ionRangeSlider({
+                                      type: "double",
+                                      grid: true,
+                                      min: 20,
+                                      max: 160,
+                                      from: 60,
+                                      to: 100,
+                                      prefix: "¥",
+	                                  postfix: "k"
+                                    });
+
+									$("#rangeslider").on("change",function(){
+									  var $this=$(this),
+									     min_value=$this.data("from");
+										 max_value=$this.data("to")
+
+									  $("#min_value").html(min_value);
+									  $("#max_value").html(max_value);
+
+									});
+
+                                });
+                            </script>
+
+
+
+							&nbsp;Housing Lift:
+							 <br>
+							 <div class="sidebar-hidden-content">
+							&nbsp;<label class="containercheck">
+							Yes
+		        		     <input name="checkbox-hl" type="checkbox" value="1"  />
+							 <span class="checkmark"></span></label>
+			        	     &nbsp;<label class="containercheck">
+							 No
+			        	     <input name="checkbox-hl" type="checkbox" value="0"  />
+							 <span class="checkmark"></span></label>
+			        	     <br>
+							 </div>
+
+
+						<!--	&nbsp; Infrastructure
+							 <br>
+							 <div class="sidebar-hidden-content">
+                            &nbsp; Park
+			        	     <input name="checkbox" type="checkbox" value="checkbox"  />
+			        		&nbsp; Underground
+			        	     <input name="checkbox" type="checkbox" value="checkbox"  />
+							 <br>
+							&nbsp; Hospital
+		        		     <input name="checkbox" type="checkbox" value="checkbox"  />
+			        	    &nbsp; Main Road
+		        		     <input name="checkbox" type="checkbox" value="checkbox"  />
+                             <br>
+							 </div>	-->
+
+							 <input type="button" id="houseapply" class="submit" value="Submit" />
+							 <script type='text/javascript'src='./js/houseselection.js'></script>
+				</div>
+			</dd>
+
+			<br>
+			<dt>
+				<a href="#accordion3" aria-expanded="false" aria-controls="accordion3" class="accordion-title accordionTitle js-accordionTrigger">
+			&nbsp;&nbsp;SCHOOL DISTRICT</a>
+			</dt>
+
+			<dd class="accordion-content accordionItem is-collapsed" id="accordion3" aria-hidden="true">
+			    <div class="accordion-content-text">
+
+		        		     &nbsp;District:
+							 <br>
+							 <div class="sidebar-hidden-content">
+							 &nbsp;<label class="containercheck">
+							 Haidian<input name="checkbox-dd" type="checkbox" value="Haidian"  />
+							    <span class="checkmark"></span></label>
+							 &nbsp;<label class="containercheck">
+							  Chaoyang<input name="checkbox-dd" type="checkbox" value="Chaoyang" / >
+							  <span class="checkmark"></span></label>
+							 <br>
+			        	     &nbsp;<label class="containercheck">
+							 Xicheng<input name="checkbox-dd" type="checkbox" value="Xicheng"  />
+			        	      <span class="checkmark"></span></label>
+
+							 &nbsp;<label class="containercheck">
+							 Dongcheng<input name="checkbox-dd" type="checkbox" value="Dongcheng"  />
+							  <span class="checkmark"></span></label>
+							 </div>
+
+
+							 &nbsp;School Category:
+
+							 <div class="sidebar-hidden-content">
+			        	     &nbsp;<label class="containerradio">
+							 Primary School
+							 <input name="checkbox-scd" type="radio" value="primary"  />
+							 <span class="checkmarkradio"></span></label>
+		        		     <br>
+							 &nbsp;<label class="containerradio">
+							 Middle School
+							 <input name="checkbox-scd" type="radio" value="middle"  />
+							  <span class="checkmarkradio"></span></label>
+
+							 </div>
+
+
+							  &nbsp;School Quality:
+
+							 <div class="sidebar-hidden-content">
+
+
+							 &nbsp;<label class="containerradio">
+			        	     Class 1 Division 1
+							 <input name="checkbox-sqd" type="radio" value="1"  />
+							 <span class="checkmarkradio"></span></label>
+			        	     <br>
+							 &nbsp;<label class="containerradio">
+			        	      Class 1 Division 2
+							  <input name="checkbox-sqd" type="radio" value="2"  />
+							  <span class="checkmarkradio"></span></label>
+			        	     <br>
+							 &nbsp;<label class="containerradio">
+			        	     Class 2 Division 1
+ 							  <input name="checkbox-sqd" type="radio" value="3" />
+							  <span class="checkmarkradio"></span></label>
+			        	     <br>
+							 &nbsp;<label class="containerradio">
+			        		 Class 2 Division 2
+							 <input name="checkbox-sqd" type="radio" value="4" />
+							 <span class="checkmarkradio"></span></label>
+							 <br>
+							 &nbsp;<label class="containerradio">
+							  General
+			        	     <input name="checkbox-sqd" type="radio" value="5"  />
+							 <span class="checkmarkradio"></span></label>
+							 <br>
+							  &nbsp;<label class="containerradio">
+			        	     Non-General School
+							 <input name="checkbox-sqd" type="radio" value="6"  />
+							 <span class="checkmarkradio"></span></label>
+			        	     <br>
+							 &nbsp;<label class="containerradio">
+			        	      All School
+							  <input name="checkbox-sqd" type="radio" value="7"  />
+							  <span class="checkmarkradio"></span></label>
+			        	     <br>
+							 </div>
+
+
+							 <input type="button" class="submit" value="Submit" ID="districtapply" />
+							 <script type='text/javascript'src='./js/schooldistrictselect.js'></script>
+			</div>
+		</dd>
+
+		</dl>
+	</div> <!--accordion-->
+
+    </div> <!--container-->
+
+	 <script type="text/javascript" src="./js/sidebar-ishidden.js"></script>
+
+
+</div>  <!--icon-list-->
+
+				<button class="close-button" id="close-button">Close Menu</button>
+
+<!--sidebar botton bottom for menu link-->
+     <ul class="footer_flex">
+      <!-- left -->
+      <li>
+          <img src="./img/storyicon.png" width="25px"; height="35px" class='img-n'>
+
+          <span><a href="./index.html">Background</a></span>
+      </li>
+      <!-- top -->
+      <li>
+          <img src="./img/mapicon.png" width="25px"; height="35px" class='img-n'>
+
+
+          <span><a href="./visual.html">Mapping</a></span>
+      </li>
+      <!-- button -->
+
+
+      <li>
+          <img src="./img/usicon.png" width="25px"; height="35px" class='img-n'>
+
+          <span><a href="./us.html">About Us</a></span>
+      </li>
+
+</ul>
+
+</div> <!--menu-wrap-->
+			<button class="menu-button" id="open-button">Open Menu</button>
+
+
+		<script src="js/sidebar-classie.js"></script>
+		<script src="js/sidebar-main.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

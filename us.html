@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+     <title>About Us</title>
+	 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	 <link rel="stylesheet" type="text/css" href="./css/usstyle.css">
+
+</head>
+<body>
+<body background= "./img/usbackground.jpg">
+
+	<div id="header">
+	     <div id="menu">
+			 <div class="menuitem"><a href="./us.html">ABOUT US</a></div>
+			 <div class="menuitem"><a href="./visual.html">MAPPING</a></div>
+			 <div class="menuitem"><a href="./index.html">BACKGROUND</a></div>
+	     </div>
+     </div>
+
+
+	 <script>
+//var timesofchange = 1;
+
+$(document).ready(function(){
+   console.log("what");
+   var timesofchange ;
+   function changesize999(){
+   timesofchange = 1
+   var timeofin = timesofchange;
+   console.log("www");
+   if (screen.width < 1700 && screen.width > 1400  && timeofin == 1 ){
+         console.log(screen.width);
+		 $('body').css('zoom', ' ' + 90 + '%');
+		 var timesofchange = 0;
+		 console.log(screen.width);
+   };
+
+   if (screen.width < 1400 && timeofin == 1){
+		 $('body').css('zoom', ' ' + 78 + '%');
+		 var timesofchange = 0;
+		 console.log("hello");
+   };
+  // $(document).ready(function(){
+    // changesize999()
+};
+changesize999();
+
+
+});
+
+
+</script>
+
+
+
+
+
+
+     <div class="us-title"><a>WE ARE <a class="a-red">SUNNY WANDERERS!</a></a></div>
+     <div class="us-intro"><p>We are four Chinese students from Centre for Advanced Spatial Analysis (CASA) in University College London (UCL). We are all Beijing-lovers and curious about many phenomena in any aspects of Beijing. As school district housing is a very popular topic in Beijing, we decide to make use of data to explore such interesting issue.</p></div>
+
+<script src="/demos/googlegg.js"></script>
+
+<div class="wrap">
+
+  <div class="tile">
+    <div class="text">
+      <h2><a class="a-red">SUN</a> NAN</h2>
+      <img src="./img/SN.jpg">
+      <h3 class="animate-text">Interior Designer</h3>
+      <p class="animate-text">An urban planner who is striving to learn programming. Responsible for writing JavaScript and making the website become more interactive.   </p>
+      <div class="dots"> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+
+  <div class="tile">
+    <div class="text">
+      <h2><a class="a-red">LI</a> YANGZHAO</h2>
+      <img src="./img/LYZ.jpg">
+      <h3 class="animate-text">Architect</h3>
+      <p class="animate-text"> Mainly focus on web-design. The motto is "Less Is More".
+
+		</p>
+      <div class="dots"> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+
+  <div class="tile">
+    <div class="text">
+      <h2><a class="a-red">WAN</a>G JUN</h2>
+      <img src="./img/WJ.jpg">
+      <h3 class="animate-text">Wizard</h3>
+      <p class="animate-text">Conquer your fear, and I promise you'll conquer death. Duty: colloct, mannage and maintain the data.
+
+		</p>
+      <div class="dots"> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+
+  <div class="tile">
+    <div class="text">
+      <h2><a class="a-red">DE</a>NG CHENG<a class="a-red">R</a>U</h2>
+      <img src="./img/DCR.jpg">
+      <h3 class="animate-text">Canalyst</h3>
+      <p class="animate-text">An indigenous Cantonese. Love Guangzhou, love Beijing. Love coding, love data. I am the "Canalyst". I catalyze the generation of the whole website, and analyze the relationships behind the data.</p>
+      <div class="dots"> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="download-area">
+<div class="us-title"><a>DATA DOWNLOAD</a></div>
+<div class="download-sec">
+<div class="download-back">
+ <a href="./csvfile/school.csv.xlsx" download="school"><img src="./img/schoolbutton-01.svg" /></a>
+ <div class="download-content">
+ <p>Information of primary and junior high schools within the four administrative districts in Beijing (Xicheng, Dongcheng, Chaoyang and Haidian), including their quality assessment, address, promotion approach, etc.</p>
+ </div>
+</div>
+
+<div class="download-back">
+ <a href="./csvfile/Housing Price.csv.xlsx" download="housing price"><img href="./visual.html" src="./img/housingpricebutton-01.svg"   /></a>
+ <div class="download-content">
+ <p>Data of second-hand housing prices within the four administrative districts in Beijing between 15th and 22nd of April, 2018, scraped from lianjia.com, a real estate website in China.</p>
+ </div>
+</div>
+
+<div class="download-back">
+ <a href="./csvfile/school_district_boundary.txt.docx" download="school districts(json)"><img href="./visual.html" src="./img/schooldistrictsbutton-01.svg"  /></a>
+ <div class="download-content">
+ <p>Shapefile boundaries of all the school districts within the four administrative districts in Beijing, made by our group according to information from the educational committee of Beijing. </p>
+ </div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

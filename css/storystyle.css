@@ -1,0 +1,758 @@
+/*----------------------------MAIN*/
+
+body{
+	height: 0;
+	font-family: Palatino Linotype;
+	text-align: justify;
+	background-attachment:fixed;
+	margin: 0;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+	
+}
+ #header {
+	background-color: rgba(89,75,70, 0.7);
+    height:90px;
+	font-family: Palatino Linotype;
+    position:fixed;
+	margin-top: -10%;
+	width:100%;
+
+}
+
+#menu{
+	width:80%;
+	position: absolute;
+	left: 20%;
+	top:0;
+}
+.menuitem{
+	text-align: right;
+	font-size: 24px;
+	background-attachment:fixed;
+	margin-top: 33px;
+	margin-right: 40px;
+	float: right;
+	width: 160px;
+	height: 30px;
+}
+ .menuitem a{
+	text-decoration: none;
+	color: white;	
+}
+ .menuitem a:hover{
+	color: #D87A68 ;
+	font-weight: bold;
+}
+ .story-top-content{
+	background-color: #fff;
+	height: 90%;
+	width: 100%;
+	float: top;
+	
+}
+
+/*scrollbar background*/  
+::-webkit-scrollbar  {  
+    width: 12px;  
+    height: 16px;  
+}    
+/*scrollbar slide area*/  
+::-webkit-scrollbar-track  {  
+   
+    border-radius: 10px;  
+    background-color: transparent;  
+
+}   
+/*scrollbar slider*/  
+::-webkit-scrollbar-thumb  {  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #555;  
+	opacity: 0.5;
+
+} 
+
+
+/*----------------------------story page*/
+/*story menu*/
+.story-top{
+	float: top;
+	width:100%;
+	min-width: 1200px;
+	height: 100%;
+	min-width: 1200px;
+}
+
+ button{ overflow: visible; }
+ button::-moz-focus-inner, input[type=reset]
+ ::-moz-focus-inner, input[type=button]
+ ::-moz-focus-inner, input[type=submit]
+ ::-moz-focus-inner, input[type=file] > input[type=button]
+ ::-moz-focus-inner { border: 0 none; padding: 0; }
+ :active { outline: 0 none; }
+
+
+
+
+/*-------------stroy page 1st content*/
+.index-content {
+	width: 100%;
+	height: 20%;
+	float: top;
+	color: white;
+	top: 25%;
+	bottom: 75%;
+	text-align: center;
+	font-size: 70px;	
+	font-family: Palatino Linotype;
+	text-align: center;
+	background-color: transparent;
+}
+.story-title{
+	width: 100%;
+	float: top;
+	margin-top: 10%;
+}
+.a-red {
+	color: #BE1622;
+}
+.subtitle {
+	margin: auto;
+	font-size: 30px;
+	width: 70%;
+	color: white;
+	text-align: center;
+	position: relative;
+    margin-top: 4%;
+
+    font-family: Palatino Linotype;
+}
+/*index start bottom*/
+.demo{
+	width:100%; 
+	margin-top: 450px;
+    float: top;
+	text-align: center;
+	font-family: Palatino Linotype;
+}
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;   
+	vertical-align: center;
+	background-color: #BE1622;
+	text-decoration: none;
+	font-size: 30px;
+    line-height: 48px;
+	width: 380px;
+	height: 50px; 
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+/* start botton inside*/
+.start {
+	color: white;
+	/*font-weight: bold;*/
+    font-family: Palatino Linotype;
+	
+}
+.start:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(#888888), to(#666666));
+	background: -moz-linear-gradient(top,  #888888,  #666666);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#666666');
+	background: #8A361F;
+}
+
+.arrow{
+	margin: 0 auto;
+	position: relative;
+
+	left: 49%;
+
+}
+
+
+
+
+/*-------------stroy page 2nd content*/
+.story-introduction {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 100%;
+	background-color: #7d6f6a;
+	min-width: 1400px;
+	
+}
+
+.intro-title{
+	color: #F2D4CB;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: left;
+	width: 380px;
+	position: absolute;
+	left: 20%;
+	top: 20%;
+}
+.intro-body {
+	color: white;
+	font-size: 20px;
+	text-align: left;
+	width: 600px;
+	position: absolute;
+	left: 50%;
+	top: 19%;
+}
+
+
+
+
+/*-------------stroy page 3rd content*/
+.distribution {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 200%;
+	color: #fff;
+	min-width: 1200px;
+
+
+}
+.distribution-content{
+	position: absolute;
+	top: 0;
+	margin:auto;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+.distribution-content h1{
+	position: absolute;
+	top: 5%;
+	margin:auto;
+	width: 100%;
+	text-align: center;
+	height: 100%;
+	color: #be1622;
+	font-size: 40px;
+}
+.distribution-content p{
+	position: absolute;
+	top: 15%;
+	left:0;
+	right:0;
+	margin:auto;
+	width: 80%;
+	text-align: center;
+	height: 100%;
+	color: #f2d4cb;
+	font-size: 24px;
+}
+.distribution-background{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+		background-size: cover;
+    background-position: center;
+	
+}
+.distribution-background img{
+	width: 120%;
+	height: 100%;
+
+
+	
+}
+
+
+.tellingstory-oontent{
+	width:100%;
+	
+}
+/*-------------stroy page 4th content*/
+.policy {
+	width: 100%;
+	height: 140%;
+	position: absolute;
+	top: 300%;
+	background-color: #A36253; 
+	overflow-y: scroll;
+	float: left;
+	min-width: 1880px;
+}
+.policy-title {
+	border-top: 2px solid #F2D4CB;
+	color: #F2D4CB;
+	width: 40%;
+	line-height: 8px;
+	font-size: 24px;
+    position: absolute;
+	top:5%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+}
+#hr1 {
+	width: 0px;
+	height: 80%;
+	background-color: transparent;
+	border: none;
+	border-right:2px dashed  #DADADA;
+	position: absolute;
+	top: 15%;
+	left: 25%;
+}
+#hr2 {
+	width: 0px;
+	height: 80%;
+	background-color: transparent;
+	border: none;
+	border-right:2px dashed  #DADADA;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+}
+#hr3 {
+	width: 0px;
+	height: 80%;
+	background-color: transparent;
+	border: none;
+	border-right:2px dashed  #DADADA;
+	position: absolute;
+	top: 15%;
+	left: 75%;
+}
+.policy-title-subtitle {
+
+	text-align:center;
+    height:100px;
+	font-family: Palatino Linotype;
+	position: absolute;
+	top: 12%;
+	width: 100%;
+	color: #F8E8D2;
+}
+.policy-title-subtitle-item{
+
+	font-size: 32px;
+	background-attachment:fixed;
+	margin-top: 33px;
+	float: left;
+	width: 25%;
+	height: 30px;
+}
+.policy-img {
+
+	text-align:center;
+    height:100px;
+	font-family: Palatino Linotype;
+	position: absolute;
+	top: 18%;
+	width: 100%;
+	color: #F8E8D2;
+}
+.policy-img-item{
+	text-align: center;
+	font-size: 30px;
+	background-attachment:fixed;
+	margin-top: 33px;
+	float: left;
+	width: 25%;
+	height: 30px;
+}
+.policy-content {
+     float: left;
+	font-family: Palatino Linotype;
+	position: absolute;
+	top: 32%;
+	margin: auto;
+	width: 100%;
+	color: #DADADA;
+}
+.p-policy-content-item{
+	text-align: left;
+	font-size: 18px;
+	background-attachment:fixed;
+	margin-top: 33px;
+	margin-left: 1%;
+	float: left;
+	width: 24%;
+	height: 100%;
+}
+.p-policy-content{
+	width: 80%;
+	margin:auto;
+	
+}
+.policy-content-p {
+	font-family: Palatino Linotype;
+	position: relative;
+	width: 100%;
+	color: #DADADA;
+	height: 40%;
+}
+.policy-content-d {
+	font-family: Palatino Linotype;
+	position: relative;
+	width: 100%;
+	color: #DADADA;
+	float: left;
+
+	margin-bottom: 3%;
+}
+.d-policy-content-item{
+	text-align: left;
+	font-size: 18px;
+	background-attachment:fixed;
+	margin-top: 33px;
+	margin-left: 1%;
+	float: left;
+	width: 24%;
+	height: 100%;
+}
+.d-policy-content{
+	width: 80%;
+	margin:auto;
+}
+
+
+
+
+
+/*-------------stroy page 5th content*/
+.school-density {
+	float: left;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    top: 440%;
+	background-color: #f2d4cb;
+	min-width: 1200px;
+
+}
+.school-density-title {
+	width:17%;
+	height: 30%;
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	 top: 15%;
+}
+.italic{
+	font-style: italic;
+}
+.school-density-title a {
+ color: #000;
+ font-size: 32px;
+ font-weight: bold;
+ border-top: 2px solid #ca483f;
+line-height: 70px;
+ width: 100%;
+ position: absolute;
+
+
+
+}
+.school-density-content p{
+	color: #000;
+    font-size: 18px;
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    left: 33%;
+}
+.school-density-content a{
+	font-style: italic;
+}
+.school-density-map {
+	width:100%;
+	height: 70%;
+	position: absolute;
+	top: 30%;
+}
+.sd-submit {
+    margin-left: 32%;
+    width: 32%;
+	margin-top: 2%;
+	
+}
+.density-map{
+	width: 68%;
+	float: right;
+	position: absolute;
+	top: 35%;
+	margin-left: 33%;
+}
+#schooldensity{
+	width: 1150px;
+	height: 500px;
+
+
+}
+
+/*select css*/
+
+
+/* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
+/* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
+
+select {
+   background-color: #3c3c3b;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+   color: #fff;
+}
+
+
+
+
+
+
+
+
+/*-------------stroy page 6th content*/
+.primary-school {
+	width: 100%;
+	height: 110%;
+	position: absolute;
+	top: 540%;
+	background-color: #FFF;
+	min-width: 1200px;
+	overflow-y: scroll;
+}
+.primary-school img{
+	position:absolute;
+	top: 25%;
+	left: 74%;
+}
+.primary-school-title a{
+    font-size: 32px;
+    font-weight: bold;
+    border-top: 2px solid #ca483f;
+    line-height: 70px;
+    width: 17%;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+	text-align: right;
+}
+.primary-school-content p{
+    
+    font-size: 18px;
+    width: 30%;
+    position: absolute;
+    top: 100px;
+    right: 33%;
+}
+
+.primary-school-map {
+	margin-top: 110px;
+	margin-left: 5%;
+}
+
+.primary-map{
+    margin-top: 5%;
+	margin-left: 5%;	
+}
+#primary{
+		width: 600px;
+	height: 400px;
+}
+
+
+/*-------------stroy page 7th content*/
+.middle-school-qualiy {
+	width: 100%;
+	height: 120%;
+	position: absolute;
+	top:650%;
+	background-color: #7b445b;
+	min-width: 1400px;
+	overflow-y: scroll;
+}
+.middle-school-qualiy a{
+    color: #f2d4cb;
+	font-size: 32px;
+    font-weight: bold;
+    border-top: 2px solid #cacaca;
+    line-height: 70px;
+    width: 17%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.middle-schoolcontent{
+	position: absolute;
+	top: 10%;
+    left: 33%;
+	width: 66%;
+}
+.middle-school-qualiy-content{
+	position: relative;
+    width: 48%;
+	height: 6%;
+	float: left;
+
+}
+.middle-school-qualiy-content h3{
+   color: white;
+   font-weight: bold;
+   margin-left:8%;
+   
+}
+.middle-school-qualiy-content p{
+    color: white;
+    font-size: 18px;
+	float: top;
+	 margin-left:8%;
+}
+
+
+.middle-school-label {
+	color: #f2d4cb;
+	font-size: 32px;
+    font-weight: bold;
+    line-height: 70px;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+}
+.middle-school-qualiy-map {
+	margin-top: 200px;
+	margin-left: 10%;
+}
+ .submit {
+	background-color: #3c3c3b;
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+    font-size: 14px;
+	width: 100px;
+	height: 30px; 
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+
+	
+}
+.middle1-map{
+	width: 60%;
+	margin-left: 33%;
+	margin-top: 12%;
+	min-width: 1100px;
+	
+}
+
+
+
+
+
+/*-------------stroy page 8th content*/
+.middle-school-distance {
+	width: 100%;
+	height: 110%;
+	position: absolute;
+	top: 770%;
+	background-color: #d4a2a1;
+		min-width: 1200px;
+}
+.middle-school-distance-title a{
+    color: #7D5656;
+	font-size: 32px;
+    font-weight: bold;
+    border-top: 2px solid #7D5656;
+    line-height: 70px;
+    width: 17%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.middle-school-distance-content p{
+    color: #7D5656;
+    font-size: 18px;
+    width: 60%;
+    position: absolute;
+    top: 8%;
+    left: 33%;
+}
+
+.middle-school-label1 {
+	color: #7D5656;
+	font-size: 32px;
+    font-weight: bold;
+    line-height: 70px;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+}
+.middle-school-distance-map {
+	margin-top: 200px;
+	margin-left: 10%;
+}
+.middle2-map {
+	margin-left: 33%;
+	margin-top: 200px;
+}
+
+
+
+/*-------------stroy page 9th content*/
+.ending {
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	top: 900%;
+	min-width: 1200px;
+
+}
+.ending a{
+    color: #f2d4cb;
+	font-size: 36px;
+    font-weight: bold;
+    border-top: 2px solid #cacaca;
+    line-height: 70px;
+    width: 17%;
+	text-align:center;
+    position: absolute;
+    top: 0;
+    left: 0;
+	right:0;
+	margin:auto;
+	text-transform: uppercase;
+}
+.ending p{
+    color: #f2d4cb;
+    font-size:20px;
+    width: 60%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+	right:0;
+	margin:auto;
+	text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

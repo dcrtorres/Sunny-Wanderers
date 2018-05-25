@@ -1,0 +1,488 @@
+/*----------------------------MAIN*/
+
+html,body,
+#wrapper{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+	font-family: Palatino Linotype;
+}
+#map-canvas{
+    height: 100%;
+    width: 100%;
+}
+
+
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dd, fieldset, form, input, select, textarea, figure { margin: 0; }
+ul, ol, menu { list-style: none;  }
+
+canvas{
+	display: block;
+}
+
+.legend-title img{
+	width: 240px;
+    float:center;
+	position: absolute;
+	right:1%;
+	top: 30px;
+	cursor:pointer;
+
+}
+
+.legend img{
+
+	width: 240px;
+	position: absolute;
+	right:1%;
+	top: 80px; 
+
+
+}
+
+
+/*scrollbar background*/  
+::-webkit-scrollbar  {  
+    width: 12px;  
+    height: 16px;  
+}    
+/*scrollbar slide area*/  
+::-webkit-scrollbar-track  {  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+	opacity: 0.5;
+}   
+/*scrollbar slider*/  
+::-webkit-scrollbar-thumb  {  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #8D6E6F;  
+	opacity: 0.5;
+
+} 
+
+.mapping-title {
+	height: 80px;
+	width: 110%;
+    line-height: 25px;
+	font-size: 18px;
+	color: #fff;
+	margin-top: -40%;
+	margin-left : -5%;
+	border-bottom: 2px solid #f3d4d5;
+}
+.mapping-title a {
+	float: left;
+	text-align: left;
+	margin-left : -5%;
+}
+
+/*----------------------------visualizaion*/
+
+
+
+
+
+
+
+button{ overflow: visible; }
+button::-moz-focus-inner, input[type=reset]
+::-moz-focus-inner, input[type=button]
+::-moz-focus-inner, input[type=submit]
+::-moz-focus-inner, input[type=file] > input[type=button]
+::-moz-focus-inner { border: 0 none; padding: 0; }
+:active { outline: 0 none; }
+
+.submit {
+	background-color: #c1272d;
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	font: 15px/150% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+	width: 30%;
+	height: 30px; 
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    margin-left: 35%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	
+}
+
+
+
+/*menu botton*/
+.footer_flex li:hover span { display: block; }
+.footer_flex li:hover .img-n { display: none; }
+.footer_flex a {
+	text-decoration: none;
+}
+.footer_flex li span {
+
+	display: none; 
+	color: #fff; 
+	font-size: 12px; 
+	line-height: 45px; 
+	}
+.footer_flex li .img-n {
+	padding-top: 10px;
+    display: inline;	
+	}
+.footer_flex {
+	position: absolute;
+	top: 92%;
+	bottom: 8%;
+	left: 15%;
+	right: 95%;
+	width:100%; 
+	}
+.footer_flex li {
+	display: inline;
+	width: 80px; 
+	height: 45px; 
+	background-color: transparent; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px; 
+	margin: 0px -8px; 
+	float: left; 
+	text-align: center; 
+	cursor: pointer; 
+	position: relative; 
+	z-index: 10; }
+.footer_flex li:hover { background-color: #c1272d; }
+.footer_flex img{
+	-webkit-box-reflect: below -5px -webkit-gradient(linear, 0% 00%, 0% 200%, from(transparent), to(#fff)); 
+
+}
+
+
+
+/*sidebar*/
+#sidebar {
+	
+	width: 20px;
+	opacity: 0.9;
+    position: absolute;
+    height: 100%;
+	color:white;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+}
+.sidebar-content-area {
+	
+	width: 280px;
+    position: absolute;
+    height: 100%;
+	opacity: 1;
+	color:white;
+	overflow: scroll;
+	overflow-x: hidden;
+	top: 0px;
+	bottom: 0px;
+	left: 20px;
+}
+
+.sidebar-hidden-content {
+	font-size: 14px;
+	line-height: 20px;
+
+}
+
+
+/*checkbox*/
+.containercheck {
+    display: inline;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 14px;
+	line-height: 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.containercheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+}
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #c1272d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*radio button*/
+.containerradio {
+    display: inline;
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 14px;
+	line-height: 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerradio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmarkradio {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerradio input:checked ~ .checkmarkradio {
+    background-color: #c1272d;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkradio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerradio input:checked ~ .checkmarkradio:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerradio .checkmarkradio:after {
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+/*popup*/
+#schooliw-container{
+	font-size: 14px;
+	font-family: Palatino Linotype;
+}
+.gm-style-iw{
+	color: white;
+	width: 300px;
+
+}
+.schooliw-left{
+	/*margin-left: 100px;*/	
+	text-align: center;
+	margin-top: 5%;
+	width: 20%;
+	float: left;
+	font-size: 20px;
+}
+.schooliw-left img {
+	width: 58px;
+	margin-left:1%;
+	margin-top: 10px;
+}
+.a-2{
+ 
+	font-weight: bold; 
+}
+.schooliw-right{
+	/*margin-left: 100px;*/	
+
+	width: 70%;
+	float: left;
+	margin-left:8%;
+	overflow-x: hidden;
+}
+.schooliw-title {
+	font-size: 20px;
+	font-weight: bold;
+	min-width: 300px;
+
+	/*margin-left: 100px;*/	
+	
+
+}
+.schooliw-address {
+
+	/*margin-left: 100px;*/	
+}
+.schooliw-content {
+	/*margin-left: 100px;*/	
+	text-align: right;
+    float: left;
+	width: 150px;
+}
+.schooliw-content-answer{
+
+	font-weight: bold; 
+	text-align: left;
+    float: left;
+	width: 45%;
+	position: relative;
+	left: 2%;
+
+}
+
+
+
+
+
+
+.houseiw-left {
+	text-align: center;
+	margin-top: 10%;
+	width: 25%;
+	float: left;
+	font-size: 18px;
+	font-family: Palatino Linotype;
+}
+.houseiw-left a{
+	font-size: 38px;
+	font-weight: bold;
+}
+.houseiw-right{
+	width: 70%;
+	float: left;
+	margin-left:5%;
+		font-family: Palatino Linotype;
+}
+.houseiw-title{
+	font-size: 24px;
+	font-weight: bold;
+	width: 100%;
+}
+.housew-content{
+	text-align: right;
+    float: left;
+	width: 40%;
+}
+.house-answer{
+	font-weight: bold; 
+	text-align: left;
+    float: left;
+	width: 58%;
+	position: relative;
+	left: 2%;
+}
+
+
+#sdiw-container{
+	color: #000;
+	font-family: Palatino Linotype;
+}
+.sdiw-left {
+	text-align: center;
+	margin-top: 1%;
+	width: 25%;
+	float: left;
+	font-size: 14px;
+}
+.sdiw-district{
+	width: 100%;
+	text-align: center;
+	height: 20%;
+	color: #cd5257;
+	font-size: 18px;
+	font-weight:bold;
+}
+,
+.sdiw-average{
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+.sdiw-average p {
+	font-weight:bold;
+	font-size: 32px;
+}
+.sdiw-average a {
+color: #911d22;	
+font-size: 14px;
+}
+.sdiw-right{
+	width: 65%;
+	float: left;
+	margin-left:5%;
+}
+.sdiw-title{
+	font-size: 30px;
+	font-weight: bold;
+	width: 100%;
+	margin-left: 1%;
+}
+.sdiw-title a{
+color: #911d22;
+}
+.sdiw-right-content{
+	width: 47%;
+	height: 30%;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	margin-left: 1%;
+}
+.sdiw-right-answer{
+	margin-top: 2%;
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+
+}
+.sdiw-right-answer a{
+    font-size: 30px;
+	font-weight: bold;
+
+}

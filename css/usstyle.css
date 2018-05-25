@@ -1,0 +1,274 @@
+body{
+	height: 0;
+	font-family: Palatino Linotype;
+    min-width: 1200px;
+	background-attachment:fixed;
+	padding: 0;
+	margin: 0;
+    background-size: cover;
+    background-position: center;
+	overflow-x: hidden;
+}
+
+
+
+/*scrollbar background*/
+::-webkit-scrollbar  {
+    width: 12px;
+    height: 16px;
+}
+/*scrollbar slide area*/
+::-webkit-scrollbar-track  {
+
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+/*scrollbar slider*/
+::-webkit-scrollbar-thumb  {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+	opacity: 0.5;
+
+}
+
+
+
+/*----------------------------story&about us*/
+#header {
+	background-color: rgba(89,75,70, 0.7);
+    width:100%;
+    height:90px;
+	font-family: Palatino Linotype;
+}
+.Screen-Size{
+	width:20%;
+}
+#menu{
+	width:80%;
+	position: absolute;
+	left: 20%;
+	top:0;
+}
+select {
+   background-color: #3c3c3b;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+   color: #fff;
+}
+.menuitem{
+	text-align: right;
+	font-size: 24px;
+	background-attachment:fixed;
+	margin-top: 33px;
+	margin-right: 40px;
+	float: right;
+	width: 160px;
+	height: 30px;
+}
+.menuitem a{
+	text-decoration: none;
+	color: white;
+}
+.menuitem a:hover{
+	color: #D87A68 ;
+	font-weight: bold;
+}
+
+
+.us-title {
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	color: #f3d4d5;
+	min-width: 1000px;
+}
+.a-red{
+	color: #da7d81;
+	font-weight: bold;
+}
+
+.us-intro {
+    position: absolute;
+	top: 33%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 45%;
+	font-size: 26px;
+	color: #fff;
+	text-align: center;
+	min-width: 1000px;
+}
+
+
+.download-area {
+	background-color: #1c1f1f;
+	position: absolute;
+	top: 150%;
+	width: 100%;
+	height: 80%;
+	margin: 0;
+	min-width: 1000px;
+	overflow-y: scroll;
+}
+.download-sec{
+    width: 80%;
+	height: 40%;
+	position: absolute;
+	top: 30%;
+	left: 19%;
+    min-width: 900px;
+
+}
+.download-back {
+	width: 350px;
+	height: 350px;
+	margin: 20px;
+	background-color: #808080 ;
+	position: relative;
+	display: inline-block;
+	color: white;
+}
+.download-back img {
+	width: 80%;
+	height: 15%;
+	position: absolute;
+	top: 14%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.download-content{
+	height: 60%;
+	width: 80%;
+	color: white;
+	position: absolute;
+	top: 35%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-size: 18px;
+
+}
+
+
+
+* { margin: 0; padding: 0; }
+.wrap {
+	position: absolute;
+	top: 50%;
+    left: 29%;
+	width: 640px;
+	min-width: 1000px;
+	}
+.tile {
+	width: 320px;
+	height: 320px;
+	margin-left: 6%;
+	margin-top: 3%;
+	background-color: #555555;
+    float: left;
+	background-size: cover;
+	position: relative;
+	left:0;
+	right:0;
+
+	cursor: pointer;
+	transition: all 0.4s ease-out;
+	box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+	overflow: hidden;
+	color: white;
+
+}
+.tile img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transition: all 0.4s ease-out;
+}
+.tile .text {
+	z-index: 99;
+	position: absolute;
+	padding: 30px;
+	height: calc(100% - 60px);
+	text-align: left;
+	}
+
+.tile h2 {
+font-size: 26px;
+text-align: center;
+	}
+.tile h3 {
+	font-weight: bold;
+	margin-top: 20px;
+	font-size: 20px;
+	transform: translateX(200px);
+	}
+.tile p {
+	font-weight: 300;
+	margin-top: 20px;
+	line-height: 25px;
+	transform: translateX(-200px);
+	transition-delay: 0.2s;
+	}
+.animate-text {
+	opacity: 0;
+	transition: all 0.6s ease-in-out;
+	}
+.tile:hover {
+	box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+	transform: scale(1.05);
+	}
+.tile:hover img {
+	opacity: 0.2;
+	}
+.tile:hover .animate-text {
+	transform: translateX(0);
+	opacity: 1;
+	}
+.dots {
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+	margin: 0 auto;
+	width: 30px;
+	height: 30px;
+	color: currentColor;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	}
+.dots span {
+	width: 5px;
+	height: 5px;
+	background-color: currentColor;
+	border-radius: 50%;
+	display: block;
+	opacity: 0;
+	transition: transform 0.4s ease-out, opacity 0.5s ease;
+	transform: translateY(30px);
+	}
+.tile:hover span {
+	opacity: 1;
+	transform: translateY(0px);
+	}
+.dots span:nth-child(1) {
+transition-delay: 0.05s;
+}
+.dots span:nth-child(2) {
+transition-delay: 0.1s;
+}
+.dots span:nth-child(3) {
+transition-delay: 0.15s;
+}
