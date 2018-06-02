@@ -1,3 +1,8 @@
 wang
+<<<<<<< HEAD
 jjun   
 www222
+=======
+jun
+111
+>>>>>>> try1.0
