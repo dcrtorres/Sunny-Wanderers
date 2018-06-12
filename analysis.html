@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title> 首页 </title>
+	 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="./css/analysisstyle.css">
+	 <script src="https://code.highcharts.com/highcharts.js"></script>
+     <script src="https://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+	  
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./index.html ">MAPPING</a></li>
+        <li><a href="./policy.html ">POLICY</a></li>
+        <li class="active"><a href="./analysis.html ">ANALYSIS</a></li>
+        <li><a href="./data.html ">DATA EXPLORER</a></li>
+        <li><a href="./us.html">ABOUT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./img/xuequfang2.jpg"  width="1200" height="800">
+        <div class="carousel-caption">
+		<div class="row">
+		<div class="col-lg-12 ">
+		
+		<div class="intro-title">
+		<div class="analysislabel"><p>ANALYSIS</p>
+		</div><br>
+		 FACTORS OF <br>"<a class="a-red">XUEQUFANG</a>" <br>HOUSING PRICE
+
+		</div>
+		</div>
+		
+		<div class="col-lg-12 ">
+		<div class="intro-body">
+		<br>
+		 <P>School Density<br>
+Quality of Primary school<br>
+Quality of Middle School<br>
+Distance to Middle School
+		 </P><br>
+		</div>
+		</div>
+		</div>
+
+</div>
+        </div>      
+      </div>
+
+
+    
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--stroy page 5th content-->
+
+	<div class="container-fluid school-density">
+	<div class="row">
+		<div class="col-lg-4 school-density-title"><a>School Density</a></div>
+		<div class="col-lg-8 ">
+		<div class="col-lg-12 school-density-content">
+		<p>
+         Density of both non-general primary and middle schools of a school district have significant effects on prices of houses within it. More non-general schools in the same area of space indicates that people living here have more chance to receive good education, which will raise the demand of housing here, and the housing prices.
+         <br><br><i>The graph below shows the correlation between average housing prices (Y-axis) and school density (X-axis) of each school district.
+You can choose to view whatever quality of schools of both primary and middle schools as you like.</i>
+		 </p>
+	    </div>
+	
+
+		<!--dropdown-->
+
+
+		 <div class="col-lg-12  density-map">
+
+		 <div class="sd-submit">
+		   <select name="schooltype" id="schooltype" onchange="schooltype()">
+           <option value="schooltype">Select School Category</option>
+           <option value="primary">Primary School</option>
+           <option value="middle">Middle School</option>
+           </select>
+		 </div>
+		 <div id="schooldensity"></div>
+
+		 </div>
+        </div>
+
+	 <script type="text/javascript" src="./js/1primary_density.js"></script>
+	 <script type="text/javascript" src="./js/1middle_density.js"></script>
+	 <script> middle_density()</script>
+	 <script>
+	 function schooltype(){
+	    var schoolden=document.getElementById("schooltype").value;
+		if (schoolden==primary){
+		   primary_density();
+		}else{
+		   middle_density()
+		};
+	 };
+	 </script>
+    </div>
+	<div class="row"><br> <br></div>
+	</div>
+
+
+
+	  
+	  
+
+<!--stroy page 6th content-->
+<div class="container-fluid primary-school">
+
+    <div class="row">
+	  <div class=" col-lg-4 col-lg-push-8">
+		<div class="primary-school-title"><a>Primary Schools</a>
+		<br>
+		<img src="./img/top5.svg" width="300px">
+	  </div>
+	  </div>
+
+		 
+		 <div class="col-lg-4 col-lg-pull-4">
+		 <div class="primary-school-content">
+         <p>
+Distance to the closest primary school does not make much effects on housing prices because the children of the household could be enrolled to the primary school as long as he or she lives within the enrolment range of the primary school.
+But the quality of primary schools make huge difference! Since the enrolment of primary schools obeys the “nearby enrolment” rule, the residential location of a household will have strong connection with the primary school nearby, which means children will be enrolled in this primary school when their age are eligible. Parents usually expect their children to study in a high quality primary school. Thus, parents will tend to choose their residence near high quality primary schools. Thus, primary schools of higher quality could significantly increase the housing prices nearby.
+Some primary schools might have transition approaches to middle schools. If the corresponding middle schools of these primary schools are of high quality, it would be considered that they might still be attractive to parents. However, data show us that the quality of these corresponding middle schools does not have much effects on housing prices.
+		</p>
+		</div></div>
+		<div class="col-lg-4 col-lg-pull-4">
+		<div class="primary-school-content">
+		<p><i>The graph below illustrates the distribution of average nearby housing prices of primary schools. Colour of the inner circle represents the quality of primary school, and the colour of the outer circle represents the quality of the corresponding middle school. You could choose to view whatever quality of primary schools as you like. You could also choose the administrative district you are interested in at the dropdown box.</i></p>
+         </div></div>		
+		</div>
+		<div class="row">
+		 <div class="primary-school-map">
+
+		 <div class="ps-submit">
+		   <select name="primarydistrict" id="district_p" onchange="primarydis()">
+           <option value="schooltype">Select District</option>
+           <option value="Xicheng">Xicheng</option>
+           <option value="Dongcheng">Dongcheng</option>
+		   <option value="Haidian">Haidian</option>
+           <option value="Chaoyang">Chaoyang</option>
+		   <option value="All">All Districts</option>
+           </select>
+		 </div>
+		 
+	 <div class="primary-map">
+     <div id="primary"></div>
+     </div>
+	 <script type="text/javascript" src="./js/2primary_xicheng.js"></script>
+	 <script type="text/javascript" src="./js/2primary_dongcheng.js"></script>
+	 <script type="text/javascript" src="./js/2primary_haidian.js"></script>
+	 <script type="text/javascript" src="./js/2primary_chaoyang.js"></script>
+	 <script type="text/javascript" src="./js/2primary_all.js"></script>
+	 <script> primary_xicheng()</script>
+	 <script>
+	 function primarydis(){
+	   var pridistrict= document.getElementById("district_p").value;
+		 if (pridistrict=="Xicheng"){
+		   primary_xicheng();
+		 }else if(pridistrict=="Dongcheng"){
+		   primary_dongcheng();
+		 }else if(pridistrict=="Haidian"){
+           primary_haidian();
+		 }else if(pridistrict=="Chaoyang"){
+		   primary_chaoyang();
+		 }else{
+	       primary_all();
+	     };
+	  };
+	 </script> 
+</div>   
+</div><div class="row"><br> <br></div>
+</div>
+ 
+	  
+	  
+	  
+	  
+
+<!--stroy page 7th content-->
+
+	 <div class="container-fluid middle-school-qualiy">
+	 <div class="row"> 
+	 <div class="col-lg-4 middle-school-quality-title">
+	 <a>Middle Schools</a>
+	 	<div class="middle-school-label"><a>Quality</a></div>
+		<div class="selection-area">
+
+		 <select name="middlequality" id="middlequality">
+         <option value="select">Select Which School?</option>
+         <option value="bind">The best in district</option>
+         <option value="binsd">The best in School-district</option>
+		 <option value="close">The closest School</option>
+         </select>
+		</div> 
+		<div class="selection-area">
+
+		 <select name="middledistrict" id="district_m">
+         <option value="schooltype">Select District</option>
+         <option value="Xicheng">Xicheng</option>
+         <option value="Dongcheng">Dongcheng</option>
+		 <option value="Haidian">Haidian</option>
+         <option value="Chaoyang">Chaoyang</option>
+		 <option value="All">All Districts</option>
+         </select>
+
+	 
+	     <input type="button" class="submit" value="Submit" onclick="midqualityfunction()" />
+		 </div>
+		
+	 
+	 
+	 
+	 </div>
+	 <div class="col-lg-8 middle-schoolcontent">
+	 <div class="row">
+	 <div class="col-lg-6 middle-school-qualiy-content">
+		<h3> Best Middle Schools Within the School District </h3>
+		<p>	Living in a school district where there are middle schools of high quality indicates that children could be enrolled in these middle schools. Thus, houses within these school districts will be more popular than others.
+The random designation policies within school districts in Xicheng and Chaoyang have significant effects on housing prices. However, houses in Dongcheng and Haidian are hardly affected in this way.
+		</p></div>
+		<div class="col-lg-6 middle-school-qualiy-content">
+		<h3> Best Middle Schools Within the Administrative District </h3>
+		<p>
+		Administrative districts whose best middle schools are of higher quality implies that the overall quality of this administrative district is higher, which has more attraction to people.
+The quality of best middle schools in Xicheng and Haidian are higher than that in Dongcheng and Chaoyang, and so as the average housing prices in the former two administrative districts.
+		</p>
+        </div></div>
+		<div class="row">
+		<div class="col-lg-6 middle-school-qualiy-content">
+		<h3> Closest Middle Schools </h3>
+		<p>
+		Except Chaoyang, none of the other administrative districts has school enrolment policies involved with nearby enrolment. So, the closest middle school to the household in these administrative districts does not have significant effects on housing prices. However, such effect is not significant in Chaoyang, either.
+		</p></div>
+		<div class="col-lg-6 smiddle-school-qualiy-content">
+		<br><p><i>
+		The graph below shows the distribution of housing prices, and the quality of each kind of middle schools corresponding to the house. The relationship between the housing price and quality of middle schools could be seen below.</i>
+		</p></div>
+		</div>
+
+	 <div class="middle1-map">
+	 <div id="middle1" >
+	 </div>
+	 </div>
+	 <script type="text/javascript" src="./js/3all_bind.js"></script>
+	 <script type="text/javascript" src="./js/3all_binsd.js"></script>
+	 <script type="text/javascript" src="./js/3all_close.js"></script>
+	 <script type="text/javascript" src="./js/3chaoyang_bind.js"></script>
+	 <script type="text/javascript" src="./js/3chaoyang_binsd.js"></script>
+	 <script type="text/javascript" src="./js/3chaoyang_close.js"></script>
+	 <script type="text/javascript" src="./js/3dongcheng_bind.js"></script>
+	 <script type="text/javascript" src="./js/3dongcheng_binsd.js"></script>
+	 <script type="text/javascript" src="./js/3dongcheng_close.js"></script>
+	 <script type="text/javascript" src="./js/3xicheng_bind.js"></script>
+	 <script type="text/javascript" src="./js/3xicheng_binsd.js"></script>
+	 <script type="text/javascript" src="./js/3xicheng_close.js"></script>
+	 <script type="text/javascript" src="./js/3haidian_bind.js"></script>
+	 <script type="text/javascript" src="./js/3haidian_binsd.js"></script>
+	 <script type="text/javascript" src="./js/3haidian_close.js"></script>
+	 <script> all_close()</script>
+	 <script>
+	   function midqualityfunction(){
+	     var midquality= document.getElementById("middlequality").value;
+		 var middistrict= document.getElementById("district_m").value;
+
+		 if (midquality=="bind"&&middistrict=="Xicheng"){
+		   xicheng_bind();
+		 };
+		 if (midquality=="bind"&&middistrict=="Dongcheng"){
+		   dongcheng_bind();
+		 };
+		 if (midquality=="bind"&&middistrict=="Haidian"){
+		   haidian_bind();
+		 };
+		 if (midquality=="bind"&&middistrict=="Chaoyang"){
+		   chaoyang_bind();
+		 };
+		 if (midquality=="bind"&&middistrict=="All"){
+		   all_bind();
+		 };
+
+		 if (midquality=="binsd"&&middistrict=="Xicheng"){
+		   xicheng_binsd();
+		 };
+		 if (midquality=="binsd"&&middistrict=="Dongcheng"){
+		   dongcheng_binsd();
+		 };
+		 if (midquality=="binsd"&&middistrict=="Haidian"){
+		   haidian_binsd();
+		 };
+		 if (midquality=="binsd"&&middistrict=="Chaoyang"){
+		   chaoyang_binsd();
+		 };
+		 if (midquality=="binsd"&&middistrict=="All"){
+		   all_binsd();
+		 };
+
+		 if (midquality=="close"&&middistrict=="Xicheng"){
+		   xicheng_close();
+		 };
+		 if (midquality=="close"&&middistrict=="Dongcheng"){
+		   dongcheng_close();
+		 };
+		 if (midquality=="close"&&middistrict=="Haidian"){
+		   haidian_close();
+		 };
+		 if (midquality=="close"&&middistrict=="Chaoyang"){
+		   chaoyang_close();
+		 };
+		 if (midquality=="close"&&middistrict=="All"){
+		   all_close();
+		 };
+
+	  };
+	 </script>
+	 		</div>
+        </div> <div class="row"><br> <br></div>
+	 </div>
+
+	  
+
+
+
+
+<!--stroy page 8th content-->
+
+	 <div class="container-fluid middle-school-distance">
+     <div class="row">
+	 <div class="col-lg-4 middle-school-distance-title">
+		<a>Middle Schools</a>
+		<div class="middle-school-label1"><a>DISTANCE</a></div>
+				 <div  class="selection-area">
+		 <select name="middledistrict2" id="district_m2" onchange="middistancefunction()">
+         <option value="schooltype">Select District</option>
+         <option value="Xicheng">Xicheng</option>
+         <option value="Dongcheng">Dongcheng</option>
+		 <option value="Haidian">Haidian</option>
+         <option value="Chaoyang">Chaoyang</option>
+		 <option value="All">All Districts</option>
+         </select>
+		 </div>
+		</div>
+		<div class="col-lg-8 middle-school-distance-content">
+		<p>
+<b>Distance to best middle schools within a school district</b> has limited effects on housing prices, because every households within the same school district will have equal chance to be enrolled in the best school of the school district.
+<br><br><b>Distance to the best middle school in the administrative district</b> has significant effect on housing prices. One of the possible reasons is that children living very close to such schools still have chances to be enrolled because some of the administrative districts have random designation policies applied to the neighbouring school districts or even the whole administrative district.
+<br><br><b>Distance to the closest middle school</b> to the household does not have significant effects on housing prices.
+<br><br> <i>The graph shows the correlation between the housing price and the distance to different kinds of middle schools from the house. The category of middle school could be chosen in the dropdown menu.
+		</i></p>
+		
+
+
+	 <div class="middle2-map">
+	 <div id="middle2"></div>
+	 </div></div>
+
+	 <script type="text/javascript" src="./js/4all_middle_distance.js"></script>
+	 <script type="text/javascript" src="./js/4xicheng_middle_distance.js"></script>
+	 <script type="text/javascript" src="./js/4dongcheng_middle_distance.js"></script>
+	 <script type="text/javascript" src="./js/4haidian_middle_distance.js"></script>
+	 <script type="text/javascript" src="./js/4chaoyang_middle_distance.js"></script>
+	 <script>all_middle_distance() </script>
+	 <script>
+	 function middistancefunction(){
+		var middistrict1= document.getElementById("district_m2").value;
+
+		if(middistrict1=="Xicheng"){
+		   xicheng_middle_distance();
+		}else if(middistrict1=="Dongcheng"){
+		   dongcheng_middle_distance();
+		}else if(middistrict1=="Haidian"){
+		   haidian_middle_distance();
+		}else if(middistrict1=="Chaoyang"){
+		   chaoyang_middle_distance();
+		}else{
+		   all_middle_distance();
+		};
+
+	 };
+	 </script>
+     </div><div class="row"><br> <br></div>
+	 </div>
+	  
+	  
+	  
+	  
+</body>
+</html>	  
+	  
+	  
+	  

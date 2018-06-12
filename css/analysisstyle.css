@@ -1,0 +1,407 @@
+body{
+	font-family: Palatino Linotype;	
+}
+
+
+select {
+   background-color: #3c3c3b;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+   color: #fff;
+}
+
+
+a:hover{
+	text-decoration:none;
+	color: #BE1622;
+}
+
+
+
+.analysislabel {
+	background-color: #BE1622;
+	width: 120px;
+	text-shadow: none;
+	float: right;
+	text-align:center;
+}
+.analysislabel p{
+	font-size: 18px;
+    text-align: center;	
+    margin-top: 5%;	
+	text-shadow: none;
+	line-height: 24px;
+	
+}
+.intro-title{
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: right;
+	text-shadow: none;	
+	line-height: 60px;
+	float: right;	
+}
+.a-red {
+	color: #BE1622;
+		text-shadow: none;
+}
+.a-red:hover{
+	text-decoration:none;
+	color: #BE1622;
+}
+.intro-body {
+	text-align: right;
+	text-shadow: none;	
+	font-size: 20px;
+	float: right;
+}
+
+
+
+/*-------------stroy page 5th content*/
+.school-density {
+	width: 100%;
+	height: auto;
+	background-color: #f2d4cb;
+
+}
+.school-density-title {
+	margin-top:3%;
+    width:50%;
+    margin-left: 10%;
+	text-align: left;
+	font-size: 32px;
+    font-weight: bold;
+    border-top: 2px solid #ca483f;
+    line-height: 70px;
+	max-width: 300px;
+	min-width: 300px;
+}
+.school-density-title a {
+ color: #000;
+ font-size: 32px;
+ font-weight: bold;
+
+
+}
+.school-density-content p{
+	color: #000;
+    font-size: 18px;
+    width: 80%;
+
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.school-density-content i{
+	color: #000;
+}
+.sd-submit {
+    margin-left: 32%;
+    width: 32%;
+	margin-top: 2%;	
+}
+.density-map{
+    margin-left: 10%;
+}
+#schooldensity{
+	width: 1150px;
+	height: 500px;
+
+}
+
+/*select css*/
+
+
+/* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
+/* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
+
+select {
+   background-color: #3c3c3b;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+   color: #fff;
+}
+
+
+
+
+
+
+
+
+/*-------------stroy page 6th content*/
+.primary-school {
+	width: 100%;
+	height: auto;
+	background-color: #FFF;
+}
+.primary-school img{
+	top: 25%;
+}
+
+.primary-school-title{
+	margin-top:15%;
+    width:50%;
+	margin-left: 25%;
+	text-align: right;
+	font-size: 32px;
+    font-weight: bold;
+    border-top: 2px solid #ca483f;
+    line-height: 70px;
+	max-width: 300px;
+	min-width: 300px;
+}
+.primary-school-title a{
+    color: #000;
+}
+.primary-school-title a:hover{
+	text-decoration:none;
+	color: #000;
+}
+.primary-school-content {
+    margin-top:15%;
+    font-size: 18px;
+    width: 90%;
+	margin-left: 15%;
+	margin-right: auto;
+	max-width: 600px;
+	min-width: 300px;
+		color: #000;
+}
+.primary-school-content i{
+	color: #000;
+}
+.primary-school-map {
+	margin-top: 110px;
+	margin-left: 5%;
+     
+}
+
+.primary-map{
+    margin-top: 5%;
+	margin-left: 5%;	
+}
+
+
+/*-------------stroy page 7th content*/
+.middle-school-qualiy {
+	width: 100%;
+	height: auto;
+	background-color: #7b445b;
+}
+.middle-school-quality-title {
+    color: #f2d4cb;
+	font-size: 32px;
+    font-weight: bold;
+    border-top: 2px solid #cacaca;
+    line-height: 70px;	
+	margin-top: 7%;
+    margin-left: 10%;
+	max-width: 300px;
+	min-width: 300px;
+	width:60%;
+}
+.middle-school-quality-title a{
+	color: #f2d4cb;
+}
+.middle-schoolcontent {
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.middle-school-qualiy-content h3{
+   color: white;
+   font-weight: bold;  
+ 
+}
+.middle-school-qualiy-content p, i{
+    color: white;
+    font-size: 18px;
+
+}
+
+
+.middle-school-label a{
+	color: #f2d4cb;
+	font-size: 28px;
+	font-weight: normal;
+
+}
+.middle-school-qualiy-map {
+	margin-top: 200px;
+	margin-left: 10%;
+}
+.selection-area {
+	font-weight: normal;
+}
+ .submit {
+	background-color: #3c3c3b;
+	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+    font-size: 14px;
+	width: 100px;
+	height: 30px; 
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    line-height: 14px;
+	font-weight: normal;	
+}
+.middle1-map{
+	margin-top: 5%;
+	min-width: 1100px;
+	
+}
+
+
+
+
+
+/*-------------stroy page 8th content*/
+.middle-school-distance {
+	width: 100%;
+	height: auto;
+	background-color: #d4a2a1;
+}
+.middle-school-distance-title {
+    color: #7D5656;
+	font-size: 32px;
+    font-weight: bold;
+    border-top: 2px solid #7D5656;
+    line-height: 70px;	
+	margin-top: 5%;
+    margin-left: 10%;
+	max-width: 300px;
+	min-width: 300px;
+	width:60%;
+}
+.middle-school-distance-title a{
+	color:  #7D5656;
+}
+.middle-school-label1 a{
+	color: #7D5656;
+	font-size: 28px;
+    font-weight: normal;
+}
+.middle-school-distance-content p{
+    color: #7D5656;
+    font-size: 18px;
+    width: 80%;
+	margin-top: 7%;
+    margin-left: 10%;
+}
+.middle-school-distance-content i{
+	color: #7D5656;
+}
+
+.middle2-map {
+    margin-left: 10%;
+	margin-top: 2%;
+
+}
+
+
+
+
+
+
+  .container {
+      padding: 80px 120px;
+  }
+  .carousel-caption {
+	  width: 80%;
+	  margin-left: -10%;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+
+  a.carousel-control {
+	  width:100px;
+  }
+  
+  @media (max-width: 100px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+
+  .nav-tabs li a {
+      color: #777;
+  }
+ 
+  .navbar {
+	font-family: Palatino Linotype;
+      background-color: rgba(89,75,70, 0.7);
+      border: 0;
+      font-size: 20px !important;
+      letter-spacing: 1px;
+      
+	  height: 60px;
+
+
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+	  line-height: 30px ! important;
+  }
+  .navbar-nav li a:hover {
+      color: #D87A68 !important;
+  }
+  .navbar-nav li.active a {
+      color: #D87A68 !important;
+      background-color: #29292c !important;
+	  	  height: 60px !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #D87A68;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: rgba(89,75,70, 0.7);
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+
