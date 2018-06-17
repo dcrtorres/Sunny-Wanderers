@@ -50,6 +50,7 @@ body{
 	text-shadow: none;
 }
 .policylabel p{
+	color: #fff;
 	font-size: 18px;
     text-align: center;	
     margin-top: 5%;	
@@ -57,12 +58,13 @@ body{
 	line-height: 36px;
 }
 .intro-title{
-	color: #fff;
+	color: #000;
 	font-size: 50px;
 	font-weight: bold;
 	text-align: left;
 	text-shadow: none;	
 	line-height: 60px;
+
 }
 .a-red {
 	color: #BE1622;
@@ -76,6 +78,7 @@ body{
     background-color: rgba(255,255,255,0.6);
     margin-top: 2%;
 	height: auto;
+
 }
 .intro-body p{
 	color: #000;
@@ -141,6 +144,8 @@ body{
   .carousel-caption {
 	  width: 80%;
 	  margin-left: -10%;
+	  margin-bottom: 20%;
+
   }
   .carousel-inner img {
       -webkit-filter: grayscale(90%);
