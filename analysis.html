@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <title> 首页 </title>
+     <title> Data Analysis </title>
 	 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +10,7 @@
 	 <script src="https://code.highcharts.com/highcharts.js"></script>
      <script src="https://code.highcharts.com/modules/exporting.js"></script>
 </head>
-<body>
+<body id="myPage">
       <script src="https://code.jquery.com/jquery.js"></script>
       <script src="./js/bootstrap.min.js"></script>
 	  
@@ -102,33 +102,32 @@ Distance to Middle School
 
 	<div class="container-fluid school-density">
 	<div class="row">
-		<div class="col-lg-4 school-density-title"><a>School Density</a></div>
+		<div class="col-lg-4 school-density-title"><a>School Density</a><br>
+		<div class="sd-submit">
+		   <select name="schooltype" id="schooltype" onchange="schooltype()">
+           <option value="schooltype">Select School Category</option>
+           <option value="primary">Primary School</option>
+           <option value="middle">Middle School</option>
+           </select>
+		 </div></div>
 		<div class="col-lg-8 ">
-		<div class="col-lg-12 school-density-content">
+		<div class="school-density-content">
 		<p>
          Density of both non-general primary and middle schools of a school district have significant effects on prices of houses within it. More non-general schools in the same area of space indicates that people living here have more chance to receive good education, which will raise the demand of housing here, and the housing prices.
          <br><br><i>The graph below shows the correlation between average housing prices (Y-axis) and school density (X-axis) of each school district.
 You can choose to view whatever quality of schools of both primary and middle schools as you like.</i>
 		 </p>
 	    </div>
-	
-
+	</div>
+</div>
 		<!--dropdown-->
 
+       <div class="row"><br> <br> <br> <br> </div>
 
-		 <div class="col-lg-12  density-map">
-
-		 <div class="sd-submit">
-		   <select name="schooltype" id="schooltype" onchange="schooltype()">
-           <option value="schooltype">Select School Category</option>
-           <option value="primary">Primary School</option>
-           <option value="middle">Middle School</option>
-           </select>
-		 </div>
-		 <div id="schooldensity"></div>
-
-		 </div>
-        </div>
+		 
+		 <div class="row"> <div class="col-lg-12">
+		 <div id="schooldensity"></div> </div> </div>
+        
 
 	 <script type="text/javascript" src="./js/1primary_density.js"></script>
 	 <script type="text/javascript" src="./js/1middle_density.js"></script>
@@ -143,7 +142,7 @@ You can choose to view whatever quality of schools of both primary and middle sc
 		};
 	 };
 	 </script>
-    </div>
+    
 	<div class="row"><br> <br></div>
 	</div>
 
@@ -431,6 +430,44 @@ The quality of best middle schools in Xicheng and Haidian are higher than that i
 	  
 	  
 	  
+	  
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Back To Top</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>	  
 	  
 </body>
 </html>	  

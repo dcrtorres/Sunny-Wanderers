@@ -100,7 +100,7 @@ a:hover{
 	color: #000;
 }
 .sd-submit {
-    margin-left: 32%;
+
     width: 32%;
 	margin-top: 2%;	
 }
@@ -110,7 +110,7 @@ a:hover{
 #schooldensity{
 	width: 1150px;
 	height: 500px;
-
+    margin-left:10%;
 }
 
 /*select css*/
@@ -318,6 +318,7 @@ select {
   .carousel-caption {
 	  width: 80%;
 	  margin-left: -10%;
+	  margin-bottom: 20%;	  
   }
   .carousel-inner img {
       -webkit-filter: grayscale(90%);
