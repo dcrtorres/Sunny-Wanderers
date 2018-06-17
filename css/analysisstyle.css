@@ -92,13 +92,10 @@ a:hover{
 	color: #000;
     font-size: 18px;
     width: 80%;
-
     margin-top: 5%;
     margin-left: 10%;
 }
-.school-density-content i{
-	color: #000;
-}
+
 .sd-submit {
 
     width: 32%;
@@ -108,9 +105,10 @@ a:hover{
     margin-left: 10%;
 }
 #schooldensity{
-	width: 1150px;
-	height: 500px;
     margin-left:10%;
+    margin-right:10%;
+
+
 }
 
 /*select css*/
@@ -157,6 +155,7 @@ select {
     line-height: 70px;
 	max-width: 300px;
 	min-width: 300px;
+	
 }
 .primary-school-title a{
     color: #000;
@@ -168,25 +167,23 @@ select {
 .primary-school-content {
     margin-top:15%;
     font-size: 18px;
-    width: 90%;
+    width: 80%;
 	margin-left: 15%;
-	margin-right: auto;
+
 	max-width: 600px;
 	min-width: 300px;
-		color: #000;
-}
-.primary-school-content i{
 	color: #000;
-}
-.primary-school-map {
-	margin-top: 110px;
-	margin-left: 5%;
-     
+
 }
 
-.primary-map{
+.primary-select{
+	margin-left: 5%;
+    margin-top: 5%;
+}
+#primary{
     margin-top: 5%;
 	margin-left: 5%;	
+	margin-right: 10%;	
 }
 
 
@@ -195,6 +192,7 @@ select {
 	width: 100%;
 	height: auto;
 	background-color: #7b445b;
+
 }
 .middle-school-quality-title {
     color: #f2d4cb;
@@ -202,40 +200,44 @@ select {
     font-weight: bold;
     border-top: 2px solid #cacaca;
     line-height: 70px;	
-	margin-top: 7%;
-    margin-left: 10%;
+    margin-right: 25%;
+	margin-left: auto;
+	margin-top: 15%;
 	max-width: 300px;
 	min-width: 300px;
-	width:60%;
+	
 }
+
 .middle-school-quality-title a{
-	color: #f2d4cb;
+	color: #f2d4cb;	
+    text-align: left;
+
 }
-.middle-schoolcontent {
-	margin-top: 5%;
-	margin-left: 5%;
+
+.middle-school-qualiy-content{
+    margin-top:15%;
+    font-size: 18px;
+    width: 90%;
+	max-width: 600px;
+	min-width: 300px;
+	color: #000;
+
 }
 .middle-school-qualiy-content h3{
    color: white;
    font-weight: bold;  
- 
+ margin-left: 15%;
 }
 .middle-school-qualiy-content p, i{
     color: white;
-    font-size: 18px;
-
+ margin-left: 15%;
+ 
 }
-
-
 .middle-school-label a{
 	color: #f2d4cb;
 	font-size: 28px;
 	font-weight: normal;
 
-}
-.middle-school-qualiy-map {
-	margin-top: 200px;
-	margin-left: 10%;
 }
 .selection-area {
 	font-weight: normal;
@@ -254,9 +256,11 @@ select {
     line-height: 14px;
 	font-weight: normal;	
 }
-.middle1-map{
-	margin-top: 5%;
-	min-width: 1100px;
+#middle1{
+
+    margin-top: 5%;
+	margin-left: 10%;	
+	margin-right: 10%;	
 	
 }
 
@@ -301,10 +305,12 @@ select {
 	color: #7D5656;
 }
 
-.middle2-map {
-    margin-left: 10%;
-	margin-top: 2%;
+#middle2{
 
+    margin-top: 5%;
+	margin-left: 10%;	
+	margin-right: 10%;	
+	
 }
 
 

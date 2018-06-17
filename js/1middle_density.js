@@ -39,9 +39,9 @@ Highcharts.chart('schooldensity', {
 		 gridLineWidth : 0
     },
     legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle',
+        layout: 'horizontal',
+        align: 'center',
+        verticalAlign: 'bottom',
         
         floating: false,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || 'rgba(255, 255, 255, 0.50)',

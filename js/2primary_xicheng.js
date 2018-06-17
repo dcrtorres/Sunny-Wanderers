@@ -3,7 +3,7 @@ Highcharts.chart('primary', {
     chart: {
         type: 'scatter',
         zoomType: 'xy',
-		width: 1100,
+
 		 height: 750,
 		 backgroundColor:"transparent"
     },

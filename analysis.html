@@ -114,7 +114,7 @@ Distance to Middle School
 		<div class="school-density-content">
 		<p>
          Density of both non-general primary and middle schools of a school district have significant effects on prices of houses within it. More non-general schools in the same area of space indicates that people living here have more chance to receive good education, which will raise the demand of housing here, and the housing prices.
-         <br><br><i>The graph below shows the correlation between average housing prices (Y-axis) and school density (X-axis) of each school district.
+         <br><p style="font-style:italic">The graph below shows the correlation between average housing prices (Y-axis) and school density (X-axis) of each school district.
 You can choose to view whatever quality of schools of both primary and middle schools as you like.</i>
 		 </p>
 	    </div>
@@ -173,13 +173,13 @@ Some primary schools might have transition approaches to middle schools. If the 
 		</div></div>
 		<div class="col-lg-4 col-lg-pull-4">
 		<div class="primary-school-content">
-		<p><i>The graph below illustrates the distribution of average nearby housing prices of primary schools. Colour of the inner circle represents the quality of primary school, and the colour of the outer circle represents the quality of the corresponding middle school. You could choose to view whatever quality of primary schools as you like. You could also choose the administrative district you are interested in at the dropdown box.</i></p>
-         </div></div>		
+		<p style="font-style:italic">The graph below illustrates the distribution of average nearby housing prices of primary schools. Colour of the inner circle represents the quality of primary school, and the colour of the outer circle represents the quality of the corresponding middle school. You could choose to view whatever quality of primary schools as you like. You could also choose the administrative district you are interested in at the dropdown box.</p>
+         </div>
+		 
+		 
+		 </div>		
 		</div>
-		<div class="row">
-		 <div class="primary-school-map">
-
-		 <div class="ps-submit">
+          <div class="primary-select">
 		   <select name="primarydistrict" id="district_p" onchange="primarydis()">
            <option value="schooltype">Select District</option>
            <option value="Xicheng">Xicheng</option>
@@ -187,12 +187,10 @@ Some primary schools might have transition approaches to middle schools. If the 
 		   <option value="Haidian">Haidian</option>
            <option value="Chaoyang">Chaoyang</option>
 		   <option value="All">All Districts</option>
-           </select>
-		 </div>
-		 
-	 <div class="primary-map">
+           </select></div>
+	 
      <div id="primary"></div>
-     </div>
+
 	 <script type="text/javascript" src="./js/2primary_xicheng.js"></script>
 	 <script type="text/javascript" src="./js/2primary_dongcheng.js"></script>
 	 <script type="text/javascript" src="./js/2primary_haidian.js"></script>
@@ -215,8 +213,7 @@ Some primary schools might have transition approaches to middle schools. If the 
 	     };
 	  };
 	 </script> 
-</div>   
-</div><div class="row"><br> <br></div>
+<div class="row"><br> <br></div>
 </div>
  
 	  
@@ -228,11 +225,11 @@ Some primary schools might have transition approaches to middle schools. If the 
 
 	 <div class="container-fluid middle-school-qualiy">
 	 <div class="row"> 
-	 <div class="col-lg-4 middle-school-quality-title">
+	 <div class="col-lg-4"> 
+	 <div class="middle-school-quality-title">
 	 <a>Middle Schools</a>
 	 	<div class="middle-school-label"><a>Quality</a></div>
 		<div class="selection-area">
-
 		 <select name="middlequality" id="middlequality">
          <option value="select">Select Which School?</option>
          <option value="bind">The best in district</option>
@@ -241,7 +238,6 @@ Some primary schools might have transition approaches to middle schools. If the 
          </select>
 		</div> 
 		<div class="selection-area">
-
 		 <select name="middledistrict" id="district_m">
          <option value="schooltype">Select District</option>
          <option value="Xicheng">Xicheng</option>
@@ -250,45 +246,41 @@ Some primary schools might have transition approaches to middle schools. If the 
          <option value="Chaoyang">Chaoyang</option>
 		 <option value="All">All Districts</option>
          </select>
-
-	 
+	    <br>
 	     <input type="button" class="submit" value="Submit" onclick="midqualityfunction()" />
 		 </div>
-		
-	 
-	 
-	 
+     </div>
 	 </div>
-	 <div class="col-lg-8 middle-schoolcontent">
-	 <div class="row">
-	 <div class="col-lg-6 middle-school-qualiy-content">
+	 
+	 <div class="col-lg-4">
+    <div class="middle-school-qualiy-content">
 		<h3> Best Middle Schools Within the School District </h3>
 		<p>	Living in a school district where there are middle schools of high quality indicates that children could be enrolled in these middle schools. Thus, houses within these school districts will be more popular than others.
 The random designation policies within school districts in Xicheng and Chaoyang have significant effects on housing prices. However, houses in Dongcheng and Haidian are hardly affected in this way.
-		</p></div>
-		<div class="col-lg-6 middle-school-qualiy-content">
+		</p>
+		<h3> Closest Middle Schools </h3>
+		<p>
+		Except Chaoyang, none of the other administrative districts has school enrolment policies involved with nearby enrolment. So, the closest middle school to the household in these administrative districts does not have significant effects on housing prices. However, such effect is not significant in Chaoyang, either.
+		</p>
+        </div>
+        </div>
+		
+	 <div class="col-lg-4">
+    <div class="middle-school-qualiy-content">
 		<h3> Best Middle Schools Within the Administrative District </h3>
 		<p>
 		Administrative districts whose best middle schools are of higher quality implies that the overall quality of this administrative district is higher, which has more attraction to people.
 The quality of best middle schools in Xicheng and Haidian are higher than that in Dongcheng and Chaoyang, and so as the average housing prices in the former two administrative districts.
 		</p>
-        </div></div>
-		<div class="row">
-		<div class="col-lg-6 middle-school-qualiy-content">
-		<h3> Closest Middle Schools </h3>
-		<p>
-		Except Chaoyang, none of the other administrative districts has school enrolment policies involved with nearby enrolment. So, the closest middle school to the household in these administrative districts does not have significant effects on housing prices. However, such effect is not significant in Chaoyang, either.
-		</p></div>
-		<div class="col-lg-6 smiddle-school-qualiy-content">
-		<br><p><i>
-		The graph below shows the distribution of housing prices, and the quality of each kind of middle schools corresponding to the house. The relationship between the housing price and quality of middle schools could be seen below.</i>
+		<br><p style="font-style:italic">
+		The graph below shows the distribution of housing prices, and the quality of each kind of middle schools corresponding to the house. The relationship between the housing price and quality of middle schools could be seen below.
 		</p></div>
 		</div>
+		</div>
 
-	 <div class="middle1-map">
-	 <div id="middle1" >
-	 </div>
-	 </div>
+
+	 <div id="middle1" > </div>
+
 	 <script type="text/javascript" src="./js/3all_bind.js"></script>
 	 <script type="text/javascript" src="./js/3all_binsd.js"></script>
 	 <script type="text/javascript" src="./js/3all_close.js"></script>
@@ -360,8 +352,9 @@ The quality of best middle schools in Xicheng and Haidian are higher than that i
 
 	  };
 	 </script>
-	 		</div>
-        </div> <div class="row"><br> <br></div>
+	 		
+         <div class="row"><br> <br></div>
+	 </div>
 	 </div>
 
 	  
@@ -392,14 +385,14 @@ The quality of best middle schools in Xicheng and Haidian are higher than that i
 <b>Distance to best middle schools within a school district</b> has limited effects on housing prices, because every households within the same school district will have equal chance to be enrolled in the best school of the school district.
 <br><br><b>Distance to the best middle school in the administrative district</b> has significant effect on housing prices. One of the possible reasons is that children living very close to such schools still have chances to be enrolled because some of the administrative districts have random designation policies applied to the neighbouring school districts or even the whole administrative district.
 <br><br><b>Distance to the closest middle school</b> to the household does not have significant effects on housing prices.
-<br><br> <i>The graph shows the correlation between the housing price and the distance to different kinds of middle schools from the house. The category of middle school could be chosen in the dropdown menu.
-		</i></p>
+</p> <p style="font-style: italic">The graph shows the correlation between the housing price and the distance to different kinds of middle schools from the house. The category of middle school could be chosen in the dropdown menu.
+		</p>
 		
+</div>
+</div>
 
-
-	 <div class="middle2-map">
 	 <div id="middle2"></div>
-	 </div></div>
+
 
 	 <script type="text/javascript" src="./js/4all_middle_distance.js"></script>
 	 <script type="text/javascript" src="./js/4xicheng_middle_distance.js"></script>
@@ -425,7 +418,7 @@ The quality of best middle schools in Xicheng and Haidian are higher than that i
 
 	 };
 	 </script>
-     </div><div class="row"><br> <br></div>
+     <div class="row"><br> <br></div>
 	 </div>
 	  
 	  
