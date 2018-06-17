@@ -56,7 +56,7 @@ function housefunction (){
 									district_h=check_hd[k];
 									  for (k in check_l){
 										  lift=check_l[k];
-									      url="http://198.13.44.188:8892/data/price/"+district_h+ "/" + max_year + "/" + min_year + "/"+ max_price + "/" + min_price +"/" + lift;
+									      url="http://198.13.44.188:8891/data/price/"+district_h+ "/" + max_year + "/" + min_year + "/"+ max_price + "/" + min_price +"/" + lift;
 										  //console.log(url);
 										  urlhouselist.push(url);
 										  console.log(urlhouselist);
