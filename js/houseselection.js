@@ -16,9 +16,21 @@ function housefunction (){
 								
 							var min_year= $("#min_year").text();
 							var max_year= $("#max_year").text();
+							if (typeof min_year != "number") {
+								min_year=1990;
+							};
+							if (typeof max_year != "number") {
+								max_year=2000;
+							};
 							
 							var min_value= $("#min_value").text();
 							var max_value= $("#max_value").text();
+							if (typeof min_value != "number") {
+								min_value=60;
+							};
+							if (typeof max_value != "number") {
+								max_value=100;
+							};
 							
 							var min_price=min_value*1000;
 						    var max_price=max_value*1000;
