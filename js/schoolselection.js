@@ -106,6 +106,7 @@ function schoolfunction(){
                                 var markerArray=[];
                                 var dataArray= [];
                                 var infowindow= new google.maps.InfoWindow({maxWidth:600});
+								var infoWindow1 =  new google.maps.InfoWindow({content:"",});
 
 		                        var mapOptions= {
 				                    center:new google.maps.LatLng(39.912843, 116.397291),
@@ -149,7 +150,7 @@ function schoolfunction(){
 
 			                           });
 									   
-									   var infoWindow1 =  new google.maps.InfoWindow({content:"",});
+									   
 									   
 									   dis.addListener('click', function(event) {
 			                            	var houseprice = parseInt(event.feature.getProperty('meanprc'));
@@ -158,6 +159,7 @@ function schoolfunction(){
 											var sdngms = parseFloat(event.feature.getProperty('mddlnbd')).toFixed(2);
 											var sdams = parseFloat(event.feature.getProperty('mddldns')).toFixed(2);
 											
+											infowindow.close();
 											infoWindow1.setContent('<div id="sdiw-container">'+
 											
 											'<div class="sdiw-left"><div class="sdiw-district">['+event.feature.getProperty('distrct')+
@@ -255,6 +257,7 @@ function schoolfunction(){
 
 		                                      google.maps.event.addListener(marker,'click',function(content){
 				                                return function(){
+													infoWindow1.close();
 					                                infowindow.setContent("");
 													
 				                                   if(quainfo=="1"){
@@ -262,7 +265,7 @@ function schoolfunction(){
 													
 							                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/1-01.svg" alt="Description"></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate
@@ -276,7 +279,7 @@ function schoolfunction(){
 													
 							                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/2-01.svg" alt="Description"  ></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate
@@ -290,7 +293,7 @@ function schoolfunction(){
 													
 								                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/3-01.svg" alt="Description"></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate
@@ -304,7 +307,7 @@ function schoolfunction(){
 													
 							                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/4-01.svg" alt="Description"></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate
@@ -318,7 +321,7 @@ function schoolfunction(){
 													
 							                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/5-01.svg" alt="Description"></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate

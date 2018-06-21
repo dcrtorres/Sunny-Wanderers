@@ -88,7 +88,7 @@ var map;
 													
 							                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/1-01.svg" alt="Description"></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate
@@ -102,7 +102,7 @@ var map;
 													
 							                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/2-01.svg" alt="Description"  ></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate
@@ -116,7 +116,7 @@ var map;
 													
 								                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/3-01.svg" alt="Description"></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate
@@ -130,7 +130,7 @@ var map;
 													
 							                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/4-01.svg" alt="Description"></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate
@@ -144,7 +144,7 @@ var map;
 													
 							                        '<div class="schooliw-left">QUALITY<br><a class="a-2"></a><img src="./img/5-01.svg" alt="Description"></div><div class="schooliw-right"><div class="schooliw-title">'+v.Name+
 							                        '</div><div class="schooliw-address">'+v.Address+						
-							                        '</div><br><div class="schooliw-content">Promtion Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Promotion</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
+							                        '</div><br><div class="schooliw-content">Transition Approach<br>Corresponding Middle School<br>Corresponding Middle School Quality<br>Rate Of Transition</div><div class="schooliw-content-answer">'+v.Assignmode+'<br>'
 							                        +v.Correspondmiddle+ '<br><br>'
 							                        +v.Correspondmiddle_quality_show+ '<br>'
 							                        +v.Correspondmiddle_promoterate
