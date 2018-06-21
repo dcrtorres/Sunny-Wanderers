@@ -7,7 +7,7 @@ body{
 	margin: 0;
     background-size: cover;
     background-position: center;
-	overflow-x: hidden;
+
 }
 
 
@@ -75,7 +75,7 @@ body{
 
 
 .us-title {
-    margin-top:5%;
+    margin-top:10%;
 	text-align: center;
 	font-size: 40px;
 	color: #f3d4d5;
@@ -94,15 +94,8 @@ body{
 	font-size: 26px;
 	color: #fff;
 	text-align: justify;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-.us-intro-1{
-	font-size: 26px;
-	color: #fff;
-	text-align: center;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 .download-area {
@@ -112,154 +105,82 @@ body{
 }
 
 .download-back {
-	width: 350px;
-	height: 350px;
-	margin-left: 15%;
-
-	background-color: #808080 ;
-	position: relative;
-	display: inline-block;
+	background-color: transparent;
 	color: white;
 }
 .download-back img {
-	width: 80%;
-	height: 15%;
-	position: absolute;
-	top: 14%;
-	left: 0;
-	right: 0;
-	margin: auto;
+	max-width: 350px;
+	max-height: 100px;
+    margin-left: 30%;
 }
 .download-content{
-	height: 60%;
-	width: 80%;
 	color: white;
-	position: absolute;
-	top: 35%;
-	left: 0;
-	right: 0;
-	margin: auto;
+    margin-left: 5%;
 	font-size: 18px;
-
-}
-
-.download-sec{
-	margin-left:10%;
-	margin-right:10%;
 }
 
 
 
-* { margin: 0; padding: 0; }
 
-.tile {
-	width: 320px;
-	height: 320px;
-	margin-left: 6%;
-	margin-top: 3%;
-	background-color: #555555;
-    float: left;
-	background-size: cover;
-	position: relative;
-	left:0;
-	right:0;
 
+
+.thumbnail{
+  background-color: transparent;
+  border: 0;   
 	cursor: pointer;
 	transition: all 0.4s ease-out;
-	box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
-	overflow: hidden;
-	color: white;
-
+	color: white;  
+	margin-top: 5%;
 }
-.tile img {
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
+
+  .thumbnail img {
+      max-width: 350px;
+      max-height: 350px;	  
 	z-index: 0;
 	transition: all 0.4s ease-out;
-}
-.tile .text {
-	z-index: 99;
-	position: absolute;
-	padding: 30px;
-	height: calc(100%);
+  }
+
+
+.text {
+    position: relative;
+   padding: 0 50px 0 50px;	
 	text-align: left;
 	}
 
-.tile h2 {
+.thumbnail h2 {
 font-size: 26px;
 text-align: center;
 	}
-.tile h3 {
+.thumbnail h3 {
 	font-weight: bold;
 	margin-top: 20px;
 	font-size: 20px;
-	transform: translateX(200px);
+	transform: translateX(30px);
 	}
-.tile p {
+.thumbnail p {
 	font-weight: 300;
 	margin-top: 20px;
 	line-height: 25px;
-	transform: translateX(-200px);
+	transform: translateX(-30px);
 	transition-delay: 0.2s;
 	}
 .animate-text {
 	opacity: 0;
 	transition: all 0.6s ease-in-out;
 	}
-.tile:hover {
-	box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+.thumbnail:hover {
+
 	transform: scale(1.05);
 	}
-.tile:hover img {
-	opacity: 0.2;
-	}
-.tile:hover .animate-text {
+
+.thumbnail:hover .animate-text {
 	transform: translateX(0);
 	opacity: 1;
 	}
-.dots {
-	position: absolute;
-	bottom: 20px;
-	right: 30px;
-	margin: 0 auto;
-	width: 30px;
-	height: 30px;
-	color: currentColor;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	}
-.dots span {
-	width: 5px;
-	height: 5px;
-	background-color: currentColor;
-	border-radius: 50%;
-	display: block;
-	opacity: 0;
-	transition: transform 0.4s ease-out, opacity 0.5s ease;
-	transform: translateY(30px);
-	}
-.tile:hover span {
-	opacity: 1;
-	transform: translateY(0px);
-	}
-.dots span:nth-child(1) {
-transition-delay: 0.05s;
-}
-.dots span:nth-child(2) {
-transition-delay: 0.1s;
-}
-.dots span:nth-child(3) {
-transition-delay: 0.15s;
-}
 
-/*
-		 .slideanim {visibility:hidden;}
+
+
+  .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
       -webkit-animation-name: slide;
@@ -301,8 +222,18 @@ transition-delay: 0.15s;
     .logo {
         font-size: 150px;
     }
-	}
+  }
+  
+  footer {
+      background-color: rgba(89,75,70, 0.7);
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
 
-	*/
-	
-	
